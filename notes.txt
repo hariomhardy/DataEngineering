@@ -1,0 +1,7 @@
+1) change the JAVA_HOME to correct folder
+    /usr/lib/jvm/java-1.11.0-openjdk-amd64
+
+2) in connection add the container name --> spark://{container_name}
+
+
+3) to submit the spark job manually --> spark-submit --master spark://dataengineering-spark-master-1:7077 --name arrow-spark jobs/word_count.py
