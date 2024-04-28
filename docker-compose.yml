@@ -14,9 +14,9 @@ x-airflow-common: &airflow-common
   env_file:
     - airflow.env
   volumes:
-    - ./jobs:/opt/bitnami/airflow/jobs
-    - ./dags:/opt/bitnami/airflow/dags
-    - ./logs:/opt/bitnami/airflow/logs
+    - ./jobs:/opt/airflow/jobs
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
   depends_on:
     - postgres
   networks:
